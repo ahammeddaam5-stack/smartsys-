@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMARTSYSIS GHANA | Digital Solutions for Smarter Management</title>
+  <meta name="description" content="SMARTSYSIS GHANA provides software development, management systems, MS Excel solutions and IT consultation in Northern Region, Ghana.">
+  <style>
+    :root{
+      --navy:#061321; --blue:#0878c9; --cyan:#19b5fe; --white:#f5f9fc;
+      --muted:#a9bac9; --card:#0d1f31; --line:rgba(255,255,255,.10);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;background:var(--navy);color:var(--white);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    header{position:fixed;top:0;left:0;right:0;z-index:10;background:rgba(6,19,33,.90);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.5px}
+    .brand img{width:48px;height:48px;object-fit:contain;border-radius:50%}
+    .navlinks{display:flex;gap:26px;align-items:center}
+    .navlinks a{color:#d8e5ef;font-size:14px}
+    .navlinks a:hover{color:var(--cyan)}
+    .btn{display:inline-block;padding:13px 20px;border-radius:9px;background:linear-gradient(135deg,var(--blue),var(--cyan));color:white;font-weight:700;box-shadow:0 8px 24px rgba(8,120,201,.25)}
+    .hero{min-height:100vh;padding:150px 0 90px;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center;background:radial-gradient(circle at 80% 30%,rgba(25,181,254,.14),transparent 35%)}
+    .eyebrow{color:var(--cyan);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:13px;margin-bottom:18px}
+    h1{font-size:clamp(42px,6vw,72px);line-height:1.03;margin-bottom:22px}
+    h1 span{color:var(--cyan)}
+    .hero p{font-size:19px;color:var(--muted);max-width:650px;margin-bottom:30px}
+    .actions{display:flex;gap:14px;flex-wrap:wrap}
+    .btn.secondary{background:transparent;border:1px solid rgba(25,181,254,.5);box-shadow:none}
+    .logo-card{display:flex;justify-content:center;align-items:center;min-height:390px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,#0c2033,#07111e);box-shadow:0 30px 80px rgba(0,0,0,.35)}
+    .logo-card img{width:min(360px,75%);filter:drop-shadow(0 0 35px rgba(25,181,254,.15))}
+    section{padding:90px 0}
+    .section-title{text-align:center;margin-bottom:50px}
+    .section-title h2{font-size:38px;margin-bottom:10px}
+    .section-title p{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{padding:30px;border:1px solid var(--line);border-radius:18px;background:var(--card);transition:.25s}
+    .card:hover{transform:translateY(-5px);border-color:rgba(25,181,254,.45)}
+    .icon{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;background:rgba(25,181,254,.12);color:var(--cyan);font-size:22px;margin-bottom:18px}
+    .card h3{margin-bottom:10px;font-size:20px}
+    .card p{color:var(--muted);font-size:15px}
+    .about{background:#081a2b}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+    .about h2{font-size:40px;margin-bottom:18px}
+    .about p{color:var(--muted);margin-bottom:16px}
+    .points{display:grid;gap:13px;margin-top:25px}
+    .point{display:flex;gap:12px;align-items:flex-start}
+    .check{color:var(--cyan);font-weight:900}
+    .contact-box{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;background:linear-gradient(135deg,#0d2941,#0b1725);border:1px solid var(--line);padding:45px;border-radius:24px}
+    .contact-box h2{font-size:36px;margin-bottom:12px}
+    .contact-box p{color:var(--muted);margin-bottom:20px}
+    .contact-info{display:grid;gap:15px}
+    .info{padding:18px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.03)}
+    .info small{display:block;color:#7f9aac;margin-bottom:4px}
+    footer{border-top:1px solid var(--line);padding:28px 0;color:#8295a6;font-size:14px}
+    .footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:800px){
+      .navlinks{display:none}.hero,.about-grid,.contact-box{grid-template-columns:1fr}
+      .hero{padding-top:120px}.cards{grid-template-columns:1fr}
+      .logo-card{min-height:300px}.contact-box{padding:28px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#home"><img src="logo.png" alt="SMARTSYSIS GHANA logo"><span>SMARTSYSIS GHANA</span></a>
+      <div class="navlinks">
+        <a href="#home">Home</a><a href="#services">Services</a><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a>
+      </div>
+      <a class="btn" href="https://wa.me/233546135888">WhatsApp Us</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container" style="display:contents">
+    <div>
+      <div class="eyebrow">Digital Solutions for Smarter Management</div>
+      <h1>Technology that makes your business <span>smarter.</span></h1>
+      <p>SMARTSYSIS GHANA provides practical software, management systems, MS Excel solutions and IT consultation to help businesses and organisations work more efficiently.</p>
+      <div class="actions">
+        <a class="btn" href="https://wa.me/233546135888?text=Hello%20SMARTSYSIS%20GHANA%2C%20I%20would%20like%20to%20make%20an%20enquiry.">Get a Consultation</a>
+        <a class="btn secondary" href="#services">Explore Services</a>
+      </div>
+    </div>
+    <div class="logo-card"><img src="logo.png" alt="SMARTSYSIS GHANA"></div>
+  </div>
+</section>
+
+
+<section id="products" style="padding:90px 0;background:#071827">
+<div class="container">
+<div class="section-title"><div class="eyebrow">Our Product</div><h2>School Management System</h2><p>A complete digital management solution designed for schools.</p></div>
+<div class="about-grid" style="margin-bottom:45px">
+<div><h2 style="font-size:38px;margin-bottom:16px">Manage your school in one place.</h2>
+<p style="color:var(--muted);margin-bottom:18px">The SMARTSYSIS School Management System helps schools organise student records, academics, attendance, fees, communication, staff and administration from one system.</p>
+<div class="points">
+<div class="point"><span class="check">✓</span><span>Student registration and complete student profiles</span></div>
+<div class="point"><span class="check">✓</span><span>Class, academic year and term management</span></div>
+<div class="point"><span class="check">✓</span><span>Attendance and student history</span></div>
+<div class="point"><span class="check">✓</span><span>Fees, payments, debtors and printable receipts</span></div>
+<div class="point"><span class="check">✓</span><span>Examination results and report cards</span></div>
+<div class="point"><span class="check">✓</span><span>SMS centre, notices and parent portal</span></div>
+<div class="point"><span class="check">✓</span><span>Staff, payroll, users and permissions</span></div>
+<div class="point"><span class="check">✓</span><span>Settings, branding, backups and audit records</span></div>
+</div>
+<div class="actions" style="margin-top:28px"><a class="btn" href="https://wa.me/233546135888?text=Hello%20SMARTSYSIS%20GHANA%2C%20I%20want%20a%20demo%20of%20the%20School%20Management%20System.">Request a Demo</a></div>
+</div>
+<div class="logo-card" style="min-height:340px"><img src="logo.png" alt="SMARTSYSIS GHANA logo"></div>
+</div>
+<div class="section-title" style="margin-bottom:30px"><h2 style="font-size:30px">Product Screens</h2><p>Preview of the system interface and its main management areas.</p></div>
+<div class="cards">
+<div class="card" style="padding:12px"><img src="school-dashboard.png" alt="School Management System dashboard" style="width:100%;border-radius:10px"><h3 style="padding:15px 10px 5px">Dashboard</h3><p style="padding:0 10px 10px">A central view of students, staff, fees and recent payments.</p></div>
+<div class="card" style="padding:12px"><img src="student-management.png" alt="Student management screen" style="width:100%;border-radius:10px"><h3 style="padding:15px 10px 5px">Student Management</h3><p style="padding:0 10px 10px">Manage student records, classes, admission information and guardians.</p></div>
+<div class="card" style="padding:12px"><img src="results-and-fees.png" alt="Results and fees screen" style="width:100%;border-radius:10px"><h3 style="padding:15px 10px 5px">Results & Fees</h3><p style="padding:0 10px 10px">Manage results, report cards, fees and payment status.</p></div>
+</div>
+</div></section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Services</h2>
+      <p>Digital tools and IT support designed around your needs.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="icon">💻</div><h3>Software Development</h3><p>Custom software and digital applications designed to solve real business and organisational problems.</p></div>
+      <div class="card"><div class="icon">⚙️</div><h3>Management Systems</h3><p>Organised digital systems that help you manage records, operations, customers and information more effectively.</p></div>
+      <div class="card"><div class="icon">📊</div><h3>MS Excel Solutions</h3><p>Professional spreadsheets, reports, dashboards, formulas and automated Excel solutions for everyday work.</p></div>
+      <div class="card"><div class="icon">🧑‍💻</div><h3>IT Consultation</h3><p>Practical technology guidance to help individuals and organisations choose and use the right digital tools.</p></div>
+      <div class="card"><div class="icon">🗂️</div><h3>Digital Solutions</h3><p>Technology solutions tailored to improve productivity, organisation and information management.</p></div>
+      <div class="card"><div class="icon">🤝</div><h3>Technical Support</h3><p>Friendly assistance with software, computer-related challenges and digital workflows.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div>
+      <div class="eyebrow">About SMARTSYSIS GHANA</div>
+      <h2>Smart technology. Practical solutions.</h2>
+      <p>We focus on using technology to simplify work and improve the way businesses and organisations manage information.</p>
+      <p>From custom software to Excel-based systems and IT consultation, our goal is to provide solutions that are useful, understandable and built around your needs.</p>
+      <div class="points">
+        <div class="point"><span class="check">✓</span><span>Practical and user-focused solutions</span></div>
+        <div class="point"><span class="check">✓</span><span>Business and organisational support</span></div>
+        <div class="point"><span class="check">✓</span><span>Based in Wulensi, Northern Region, Ghana</span></div>
+      </div>
+    </div>
+    <div class="logo-card"><img src="logo.png" alt="SMARTSYSIS GHANA logo"></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="contact-box">
+      <div>
+        <div class="eyebrow">Let's Work Together</div>
+        <h2>Have a project in mind?</h2>
+        <p>Contact SMARTSYSIS GHANA to discuss your software, Excel, management system or IT needs.</p>
+        <a class="btn" href="https://wa.me/233546135888?text=Hello%20SMARTSYSIS%20GHANA%2C%20I%20would%20like%20to%20discuss%20a%20project.">Chat on WhatsApp</a>
+      </div>
+      <div class="contact-info">
+        <div class="info"><small>PHONE / WHATSAPP</small><strong>054 613 5888</strong></div>
+        <div class="info"><small>LOCATION</small><strong>Wulensi, Northern Region, Ghana</strong></div>
+        <div class="info"><small>BUSINESS</small><strong>SMARTSYSIS GHANA</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <span>© 2026 SMARTSYSIS GHANA. All rights reserved.</span>
+    <span>Digital Solutions for Smarter Management</span>
+  </div>
+</footer>
+</body>
+</html>
